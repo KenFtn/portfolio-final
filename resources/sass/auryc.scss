@@ -106,3 +106,17 @@ a.email{
 		transform: translateX(0);
 	}
 }
+
+@media screen and (min-width:992px){
+    .separator{
+        width: 45%;
+        margin-left: 55%;
+        opacity: 0.85;
+        margin-top:4rem;
+    }
+    .title-section{
+        width: 45%;
+        margin-left: 55%;
+        font-size: 2rem;
+    }
+}

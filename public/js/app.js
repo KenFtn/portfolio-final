@@ -49388,9 +49388,8 @@ var app = new Vue({
 
 var btn = document.querySelector('.anm-menu-button'),
     menu = document.querySelector('.anm-menu'),
-    background = document.querySelector('.anm-background'),
-    btnMenu = document.querySelector('.anm-container').querySelectorAll('a');
-console.log(btnmenu);
+    background = document.querySelector('.anm-background'); //btnMenu = document.querySelector('.anm-container').querySelectorAll('a');
+
 var menuOpen = false;
 
 function showMenu() {
@@ -49418,13 +49417,23 @@ function hideMenu() {
 btn.addEventListener('click', function () {
   menuOpen ? hideMenu() : showMenu();
 });
-btnMenu.forEach(function (btn) {
-  btn.addEventListener('click', function () {
+/*
+btnMenu.forEach(btn => {
+  btn.addEventListener('click', function(){
     menuOpen ? hideMenu() : showMenu();
   });
 });
+*/
+
 window.addEventListener('keydown', function (e) {
   if (e.keyCode == 27) hideMenu();
+});
+var projets = document.querySelectorAll('.projet');
+projets.forEach(function (title) {
+  title.addEventListener('click', function (e) {
+    var desc = this.children[2];
+    desc.classList.toggle('active');
+  });
 });
 
 /***/ }),

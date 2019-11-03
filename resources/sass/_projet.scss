@@ -35,10 +35,16 @@
         width: 50%;
         font-size: 2rem;
         opacity: 0.85;
-        display: none;
+        height: 0;
+        overflow: hidden;
+        transition: all 1s ease-out;
     }
-    .projetTitle:hover{
-        
+    .projetDesc.active{
+        transition: all 1s ease-out;
+        height: auto;
+    }
+    .projet{
+        cursor: pointer;
     }
 
 }

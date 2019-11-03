@@ -170,6 +170,21 @@ a.email {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .separator {
+    width: 45%;
+    margin-left: 55%;
+    opacity: 0.85;
+    margin-top: 4rem;
+  }
+
+  .title-section {
+    width: 45%;
+    margin-left: 55%;
+    font-size: 2rem;
+  }
+}
+
 .letter-red {
   color: #ff0d00;
   -webkit-text-stroke: 0.5px;
@@ -275,7 +290,20 @@ a.email {
     width: 50%;
     font-size: 2rem;
     opacity: 0.85;
-    display: none;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+  }
+
+  .projetDesc.active {
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    height: auto;
+  }
+
+  .projet {
+    cursor: pointer;
   }
 }
 
@@ -306,6 +334,26 @@ a.email {
 
 .listSkillsDetail li {
   margin-bottom: 0.75rem;
+}
+
+@media screen and (min-width: 992px) {
+  .languageSkills {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+
+  .listSkillsDetail {
+    width: 45%;
+  }
+
+  .listSkillsDetail li {
+    margin-right: 0.75rem;
+  }
 }
 
 @media screen and (max-width: 980px) {

@@ -19,3 +19,17 @@
         margin-bottom: 0.75rem;
     }
 }
+
+@media screen and (min-width: 992px){
+    .languageSkills{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .listSkillsDetail{
+        width: 45%;
+        li{
+            margin-right: 0.75rem;
+        }
+    }
+}

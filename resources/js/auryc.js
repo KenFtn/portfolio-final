@@ -2,9 +2,8 @@
 
 var btn = document.querySelector('.anm-menu-button'),
     menu = document.querySelector('.anm-menu'),
-    background = document.querySelector('.anm-background'),
-    btnMenu = document.querySelector('.anm-container').querySelectorAll('a');
-console.log(btnmenu);
+    background = document.querySelector('.anm-background');
+    //btnMenu = document.querySelector('.anm-container').querySelectorAll('a');
 var menuOpen = false;
 
 function showMenu() {
@@ -33,14 +32,24 @@ btn.addEventListener('click', function () {
   menuOpen ? hideMenu() : showMenu();
 });
 
+/*
 btnMenu.forEach(btn => {
   btn.addEventListener('click', function(){
     menuOpen ? hideMenu() : showMenu();
   });
 });
+*/
 
 window.addEventListener('keydown', function (e) {
   if (e.keyCode == 27) hideMenu();
 });
+
+const projets = document.querySelectorAll('.projet');
+projets.forEach(title => {
+    title.addEventListener('click', function(e) {
+      const desc = this.children[2]
+      desc.classList.toggle('active');
+    })
+})
 
 

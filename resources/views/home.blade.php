@@ -47,7 +47,7 @@
                     developpeur 
                 </span>
                 <span class="text-stroke-red" data-aos="fade-down-right" data-aos-offset="150" data-aos-easing="ease-in-sine" data-aos-duration="500">
-                    web et mobile
+                    web et web mobile
                 </span>
                 <span data-aos="fade-down-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="2000">
                     junior
