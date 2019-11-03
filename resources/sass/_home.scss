@@ -1,0 +1,57 @@
+.letter-red{
+    color:$red;
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color:black;
+}
+.text-passion{
+    font-size: 2rem;
+    grid-column: 5 / 45;
+    grid-row: 20/45;
+    opacity: 0.87;
+}
+.text-role{
+    font-size: 10rem;
+    grid-column: 5/100;
+    grid-row: 45/80;
+    opacity: 0.87;
+    margin-bottom: 2rem;
+}
+.web{
+    white-space: nowrap;
+    transform: translateX(-85px);
+}
+.logo{
+   position:absolute;
+   top:17px;
+   left:15px; 
+}
+
+.logo img{
+    height:6vmax;
+}
+
+@media screen and (min-width: 992px){
+    .text-passion{
+        font-size: 3.5rem;
+        grid-row: 14/45;
+    }
+    .text-role{
+        font-size: 20rem;
+        grid-column: 5/100;
+        grid-row: 8/80;
+        opacity: 0.87;
+        margin-bottom: 2rem;
+    }
+
+    .dev{
+        margin-left: 25rem;
+    }
+
+    .web{
+        margin-left:-5rem;
+        color:$body-bg;
+        -webkit-text-stroke: 2px black;
+        
+    }
+
+}

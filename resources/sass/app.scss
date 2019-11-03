@@ -1,0 +1,22 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Oswald:600|Roboto:500&display=swap');
+
+// Variables
+@import 'variables';
+@import 'auryc';
+@import '_home';
+@import '_projet';
+@import '_expertise';
+
+@media screen and (max-width:980px){
+    @import '_menu';
+}
+
+@media screen and (min-width:981px){
+    @import '_menuDesk';
+}
+
+@import 'me';
+
+// Bootstrap
+//@import '~bootstrap/scss/bootstrap';

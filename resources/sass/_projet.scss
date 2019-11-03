@@ -1,0 +1,44 @@
+.miniSeparator{
+    height: 2px;
+    background: $red;
+    opacity: 0.8;
+    margin-left: .65rem;
+    margin-right: .65rem;
+    margin-top: .1rem;
+    width: 4.5rem;
+}
+
+.headerProjet{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.projet{
+    margin-bottom: 7rem;
+    margin-top:2.5rem;
+}
+
+.projetTitle{
+    font-size: 1.8rem;
+}
+
+@media screen and (min-width:992px){
+    .headerProjet{
+        font-size:1.5rem;
+        opacity: 0.85;
+    }
+    .projetTitle{
+        font-size: 4rem;
+    }
+    .projetDesc{
+        width: 50%;
+        font-size: 2rem;
+        opacity: 0.85;
+        display: none;
+    }
+    .projetTitle:hover{
+        
+    }
+
+}

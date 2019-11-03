@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: $body-bg;
+    font-family: $font-text !important;
+    padding-left:15px;
+    padding-right: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Oswald', sans-serif;
+    opacity: 0.85;
+}
+
+.title-section {
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+
+.separator {
+    margin-top: 1rem;
+    height: 3px;
+    background: black;
+    opacity: 0.99;
+}
+
+.grid {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(99, 1vw);
+    grid-template-rows: repeat(99, 1vh);
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.87) !important;
+    background: linear-gradient(to top, rgba(255, 13, 0, 0.8) 0%, rgba(255, 13, 0, 0.8) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .5s;
+    cursor: pointer;
+}
+
+a:hover {
+    background-size: 100% 100%;
+}
+
+a.email{
+    background-size: 100% 100%;
+}
+.email:hover{
+    animation: underlines 1s;
+}
+
+
+@keyframes underlines {
+    from {
+        background-size: 100% 100%;
+        background-position: bottom right;
+    }
+
+    50% {
+        background-size: 0 100%;
+        background-position: bottom right;
+    }
+
+    50.01% {
+        background-position: bottom left;
+    }
+
+    100% {
+        background-size: 100% 100%;
+        background-position: bottom left;
+    }
+}
+
+.nav-is-stuck .navBar {
+	position: fixed;
+	top: 0;
+	left: 2%;
+	animation: stickAnim 1s;
+}
+
+@keyframes stickAnim {
+	0% {
+		transform: translateY(-86px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+.nav-no-stuck .navBar{
+    animation: endStickAnim 1s;
+}
+
+@keyframes endStickAnim {
+	0% {
+		transform: translateX(20vw);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}

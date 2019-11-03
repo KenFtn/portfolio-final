@@ -1,0 +1,21 @@
+.languageSkills{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 1px solid $red;
+    hr{
+        width: 100%;
+        height: 1px;
+    }
+}
+.languageSkills.last{
+        border-bottom: 0px; 
+}
+
+.listSkillsDetail{
+    list-style: none;
+    padding-left: 0;
+    li{
+        margin-bottom: 0.75rem;
+    }
+}
